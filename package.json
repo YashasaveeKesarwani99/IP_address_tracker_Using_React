@@ -9,6 +9,7 @@
   "main": "src/index.js",
   "dependencies": {
     "leaflet": "1.7.1",
+    "leaflet.icon.glyph": "0.3.0",
     "node-modules": "1.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
