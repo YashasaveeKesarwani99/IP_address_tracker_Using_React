@@ -3,10 +3,10 @@
   padding: 0;
 }
 .map {
-  height: 70vh;
+  height: 120vh;
 }
 .inputForm {
-  height: 30vh;
+  height: 40vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -15,6 +15,9 @@
 }
 h3 {
   color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 900;
 }
 .in {
   display: flex;
@@ -23,16 +26,44 @@ h3 {
   flex-direction: column;
 }
 .input {
-  width: 80vh;
+  width: 70rem;
   height: 4vh;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  color: grey;
+  font-size: 15px;
+  font-size: 600;
 }
+.input:focus {
+  outline: none;
+}
+
 .btn {
   margin: 5vh;
   border-radius: 5px;
   padding-top: 6px;
-  width: 10vh;
+  width: 30vh;
   height: 4.5vh;
   background-color: black;
   color: white;
   text-align: center;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.locate {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  z-index: 999;
+  color: black;
+  top: 35vh;
+  height: 70px;
+  width: 1200px;
+  font-size: 20px;
+  font-weight: 1200;
+  border-radius: 5px;
 }

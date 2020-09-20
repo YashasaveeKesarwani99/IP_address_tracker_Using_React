@@ -55,6 +55,18 @@ class InputForm extends Component {
 
   render() {
     const position = [this.state.lat, this.state.lng];
+    var loc = "";
+    if (this.state.lat !== "") {
+      loc = (
+        <div className="locate">
+          <p className="info">{this.state.location.country}</p>
+          <p className="info">{this.state.location.city}</p>
+          <p className="info">{this.state.location.timezone}</p>
+        </div>
+      );
+    } else {
+      loc = null;
+    }
     return (
       <div className="content">
         <div className="inputForm">
@@ -63,18 +75,14 @@ class InputForm extends Component {
             <input
               className="input"
               type="text"
-              placeholder="   Enter any IP address"
+              placeholder="Enter any IP address"
               value={this.state.search}
               onChange={(e) => this.inputHandler(e)}
             />
             <div className="btn" onClick={() => this.clickHandler()}>
               Open
             </div>
-          </div>
-          <div className="locate">
-            <p className="country">{this.state.location.country}</p>
-            <p className="city">{this.state.location.city}</p>
-            <p className="time">{this.state.location.timezone}</p>
+            {loc}
           </div>
         </div>
         <div className="map2">
