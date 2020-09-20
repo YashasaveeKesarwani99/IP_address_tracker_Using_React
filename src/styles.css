@@ -1,3 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .map {
-  height: 100vh;
+  height: 70vh;
+}
+.inputForm {
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0000af;
+}
+h3 {
+  color: white;
+}
+.in {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.input {
+  width: 80vh;
+  height: 4vh;
+}
+.btn {
+  margin: 5vh;
+  border-radius: 5px;
+  padding-top: 6px;
+  width: 10vh;
+  height: 4.5vh;
+  background-color: black;
+  color: white;
+  text-align: center;
 }

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./styles.css";
 
 class InputForm extends Component {
   constructor(props) {
@@ -18,14 +19,15 @@ class InputForm extends Component {
     return (
       <div className="inputForm">
         <h3>IP Address Tracker</h3>
-        <div className="input">
+        <div className="in">
           <input
+            className="input"
             type="text"
-            placeholder="Enter any IP address"
+            placeholder="   Enter any IP address"
             value={this.state.search}
             onChange={(e) => this.inputHandler(e)}
           />
-          <button className="btn">+</button>
+          <div className="btn">Open</div>
         </div>
       </div>
     );
